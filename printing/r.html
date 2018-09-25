@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+.<META HTTP-EQUIV="pragma" CONTENT="no-cache"> 
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate"> 
+<META HTTP-EQUIV="expires" CONTENT="0">
+</head>
+<body>
+	<div id="myDiv"></h2></div>
+</body>
+<script src="filePrint.js"></script>
+<script>
+	window.onload=function(){
+		var xmlhttp;
+		//向下兼容ie
+		if (window.XMLHttpRequest)
+		{
+			xmlhttp=new XMLHttpRequest();
+		}
+		else
+		{
+			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xmlhttp.onreadystatechange=function()
+		{
+			if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			{
+				document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+			}
+		}
+		xmlhttp.open("GET","./printing.php?par=listDir",true);
+		xmlhttp.send();
+	}
+	function printing(fileName){
+		$res = printWord("C:/phpStudy/PHPTutorial/WWW/static/"+fileName);
+		if($res){
+			var xmlhttp;
+			//向下兼容ie
+			if (window.XMLHttpRequest)
+			{
+				xmlhttp=new XMLHttpRequest();
+			}
+			else
+			{
+				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.onreadystatechange=function()
+			{
+				if (xmlhttp.readyState==4 && xmlhttp.status==200)
+				{
+					if(xmlhttp.responseText == 2){
+						alert("打印成功，但是文件名未修改");
+					}else{
+						alert("打印成功");
+						
+						
+						 
+					}
+					
+				}
+			}
+			xmlhttp.open("GET","./printing.php?par=rename&fileName="+fileName,true);
+			xmlhttp.send();
+		}
+	}
+
+</script>
+</html>

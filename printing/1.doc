@@ -1,0 +1,5 @@
+<html 
+	            xmlns:o="urn:schemas-microsoft-com:office:office" 
+	            xmlns:w="urn:schemas-microsoft-com:office:word" 
+	            xmlns="http://www.w3.org/TR/REC-html40">
+	            <meta charset="UTF-8" />您的ip是：127.0.0.1<br><p>#include &lt;iostream&gt;<br/></p><p>using namespace std;</p><p>int main(){</p><p>&nbsp;&nbsp;&nbsp;&nbsp;int a, b,c ;<br/></p><p>&nbsp;&nbsp;&nbsp;&nbsp;cin &gt;&gt; a &gt;&gt; b &gt;&gt; c;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;cout &lt;&lt; a +b == c &lt;&lt; endl;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br/></p><p>}</p></html>
