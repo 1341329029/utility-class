@@ -14,7 +14,9 @@ Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了分�
 **注：** Ctrl+Z 的效果是撤销，每次核销后都会变到以前的样子，就想比较相似版本控制，记录你提交的每次变化（历史版本）。
 
 ---
+
  **什么是分布式系统？**
+
 想要了解点链接
 https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/4905336?fr=aladdin
 
@@ -56,7 +58,9 @@ https://www.jb51.net/article/128153.htm
 下图为命令行界面
 
 <img src="3.png" width="500" align=center />
+
 ---
+
 **初始化：**
 初始化输入用户名和邮箱
 
@@ -131,7 +135,9 @@ rm : 删除
 <img src="12.jpg" width="600" align=center />
 
 <br/>
+
 ---
+
 显示目录下的文件
 
 >$ls 
@@ -142,9 +148,11 @@ rm : 删除
 <img src="13.png" width="600" align=center />
 
 ---
+
 写入music到 README.md 文件中 
 **注：** 文件md格式和不要求掌握
 <img src="14.png" width="600" align=center />
+
 1.创建一个名为 .git 的子目录
 > $ git init
 
@@ -178,6 +186,7 @@ rm : 删除
 <img src="15.png" width="600" align=center />
 
 ---
+
 远程库显示
 
 <img src="16.png" width="600" align=center />
@@ -185,6 +194,7 @@ rm : 删除
 #### 3.2 Github与git连接（2）
     
 1.复制网址
+
 <img src="17.png" width="600" align=center />
 
 2.克隆
@@ -194,7 +204,9 @@ rm : 删除
 将存储库克隆到新创建的目录中，为克隆的存储库中的每个分支创建远程跟踪分支(使用git branch -r可见)，并从克隆检出的存储库作为当前活动分支的初始分支。
 
 <img src="18.jpg" width="600" align=center />
+
 ---
+
 3.查看状态
 
 > $ git status
@@ -204,14 +216,19 @@ git status命令用于显示工作目录和暂存区的状态。使用此命令�
 <img src="19.png" width="600" align=center />
 
 ---
+
 没有加到暂存区
 
  <img src="20.png" width="600" align=center />
+
 ---
+
 通过git add 加入暂存区
 
  <img src="21.png" width="600" align=center />
+
 ---
+
  4.添加描述，进行提交
 
     $ git commit -m ""
@@ -224,7 +241,9 @@ git status命令用于显示工作目录和暂存区的状态。使用此命令�
 1.新增文件2.txt
 
  <img src="23.png" width="600" align=center />
+
 ---
+
 **注：** 在music文件夹中新增文件后查看状态显示红色
 
 2.修改文件1.txt
@@ -232,31 +251,43 @@ git status命令用于显示工作目录和暂存区的状态。使用此命令�
  <img src="24.png" width="600" align=center />
 
 ---
+
 **注：** 在music文件夹中修改文件1.txt后查看状态显示红色并且前面有modified
 
  <img src="25.png" width="600" align=center />
+
 ---
+
 3.添加进暂存区
 
 <img src="26.png" width="600" align=center />
+
 ---
+
 **注：** git add . 表示全部添加 ,  **.** 表示全部 ，添加暂存区域后会变成绿色 
 
 <img src="27.png" width="600" align=center />
+
 ---
 
 4.再 重新修改1.txt
 
 <img src="30.png" width="600" align=center />
 
+---
+
 **注：** 上面绿色为暂存区中，如果1.txt再被更改下方还会出现红色的（第一次修改提交后再修改还会不同就会变红）
 
 <img src="31.png" width="600" align=center />
+
 ---
+
 5.再次添加到暂存区并查看状态
 
 <img src="32.png" width="600" align=center />
+
 ---
+
 6.查看以往github 上的文件 和 文件信息
 
 <img src="28.png" width="600" align=center />
@@ -264,10 +295,13 @@ git status命令用于显示工作目录和暂存区的状态。使用此命令�
 <img src="29.png" width="600" align=center />
 
 ---
+
 7.进行描述和提交
 
 <img src="36.png" width="600" align=center />
+
 ---
+
 **注：**  描述也被更改了
 
 8.查看现在的状态
@@ -278,3 +312,5 @@ git status命令用于显示工作目录和暂存区的状态。使用此命令�
 
 **注：**  文件1.txt的内容更改了，并且描述也都更改了
 
+
+## 未完待续 ...
